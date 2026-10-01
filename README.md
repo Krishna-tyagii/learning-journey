@@ -36,15 +36,7 @@ python pyson.py
 
 - [ ] Practice a little every day
 - [ ] Build a consistent commit streak
-- [ ] Learn the basics: variables, loops, functions, arrays
-- [ ] Solve beginner problems on platforms like LeetCode and HackerRank
 - [ ] Build a small project in each language
-
-## Progress log
-
-| Date | What I learned |
-| ---- | -------------- |
-| Day 1 | Set up Git, GitHub, and VS Code |
 
 ## About me
 
