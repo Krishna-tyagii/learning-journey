@@ -357,6 +357,7 @@
 //     return 0;
 // }
 
+//PAIRS
 
 
 // #include<bits/stdc++.h>
@@ -402,6 +403,11 @@
 // }
 
 
+
+
+
+// VECTORS
+
 // #include<bits/stdc++.h>
 // using namespace std;
 // void vectur(){
@@ -421,25 +427,61 @@
 // }
 
 
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+//     vector<pair<int, int>> vec = {{1, 100}, {2, 200}};
+
+//     for (auto p : vec) {
+//         cout << p.first << " " << p.second << "\n";
+//     }
+
+//     return 0;
+// }
+
+
+//SINGLE PAIR VECTOR
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+//     vector <int>meow= {11,100};
+//     for (auto p:meow){
+//         cout<<p<<" " <<"\n";
+//     }
+
+//     return 0;
+// }
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+//     vector <pair <int,int>>meow= {{11,100},{12,423}};
+//     for (auto p:meow){
+//         cout<<p.first<<" "<<p.second<<" " <<"\n";
+//     }
+
+//     return 0;
+// }
+
+
+
 #include <bits/stdc++.h>
 using namespace std;
+int main(){
+    vector<int> v = {10, 20, 30};
+    cout << v[0]<<" "<< v.at(1)<<" "<<v.front()<<" "<<v.back();
+ 
 
-int main() {
-    vector<pair<int, int>> vec = {{1, 100}, {2, 200}};
 
-    // Fallback: Just use 'auto p' and access .first and .second
-    for (auto p : vec) {
-        cout << p.first << " " << p.second << "\n";
-    }
 
     return 0;
 }
-
-
-
-
-
-
+      
 
 
 
