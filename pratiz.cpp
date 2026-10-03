@@ -470,16 +470,40 @@
 
 
 
-#include <bits/stdc++.h>
-using namespace std;
-int main(){
-    vector<int> v = {10, 20, 30};
-    cout << v[0]<<" "<< v.at(1)<<" "<<v.front()<<" "<<v.back();
-    return 0;
-}
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     vector<int> v = {10, 20, 30};
+//     cout << v[0]<<" "<< v.at(1)<<" "<<v.front()<<" "<<v.back();
+//     return 0;
+// }
       
 
+//Practicse Array
 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int arr[5] = {1,2,3,4,5};
+    int a=0 ;
+
+    for (int i =0 ; i<5 ; i++){
+        cout << arr[i];
+        cout<<"\n";
+        a=a+i ;
+        
+
+        
+
+
+    }
+    cout<<"sum of all elements is "<<a<<endl;
+    a=a/5;
+    cout<<"average of the array is"<<a;
+
+    return 0;
+}
 
 
 
