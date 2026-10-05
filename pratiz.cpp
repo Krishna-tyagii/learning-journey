@@ -481,40 +481,157 @@
 
 //Practicse Array
 
-#include<bits/stdc++.h>
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+//     int arr[5] = {1,2,3,4,5};
+//     int a=0 ;
+
+//     for (int i =0 ; i<5 ; i++){
+//         cout << arr[i];
+//         cout<<"\n";
+//         a=a+i ;
+        
+
+        
+
+
+//     }
+//     cout<<"sum of all elements is "<<a<<endl;
+//     a=a/5;
+//     cout<<"average of the array is"<<a;
+
+//     return 0;
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int arr[5] = {1,2,3,4,5};
+//     int a=0 ;
+
+//     for (int i =0 ; i<5 ; i++){
+//         cout << arr[i];
+//         cout<<"\n";
+//         a=a+i ;
+//     }
+//     cout<<"sum of all elements is "<<a<<endl;
+//     a=a/5;
+//     cout<<"average of the array is"<<a;
+
+//     return 0;
+// }
+
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int arr[5]={1,2,3,4,5};
+//     int i ;
+//     for (int i =5 ; i>=0 ;i--){
+//         cout<<arr[i]<<endl;
+//     }
+
+    
+    
+    
+
+//     return 0;
+// }
+
+
+// #include <bits/stdc++.h>
+// // #include <vector>
+
+// using namespace std;
+
+// void printArray( vector<int>& arr) {
+    
+//     for (int i = 0; i < arr.size(); ++i) {
+//         cout << arr[i] << (i < arr.size() - 1  ", " : "");
+//     }
+    
+// }
+
+// void insertElement(vector<int>& arr, int element, int position) {
+//     // Valid positions: 0 to arr.size()
+//     if (position < 0 || position > arr.size()) {
+//         cout << "Insertion Failed: Position " << position << " is out of bounds.\n";
+//     } else {
+//         arr.insert(arr.begin() + position, element);
+//         cout << "After inserting " << element << " at position " << position << ": ";
+//         printArray(arr);
+//     }
+// }
+
+// void deleteElement(vector<int>& arr, int position) {
+//     // Valid positions: 0 to arr.size() - 1
+//     if (position < 0 || position >= arr.size()) {
+//         cout << "Deletion Failed: Position " << position << " is out of bounds.\n";
+//     } else {
+//         int removed_element = arr[position];
+//         arr.erase(arr.begin() + position);
+//         cout << "After deleting " << removed_element << " from position " << position << ": ";
+//         printArray(arr);
+//     }
+// }
+
+// int main() {
+//     vector<int> my_array = {10, 20, 30, 40, 50};
+    
+//     cout << "Original Array: ";
+//     printArray(my_array);
+//     cout << "\n";
+
+//     // 1. Valid Insertion
+//     insertElement(my_array, 25, 2);
+    
+//     // 2. Valid Deletion
+//     deleteElement(my_array, 4);
+    
+//     // 3. Invalid Insertion (Index too large)
+//     insertElement(my_array, 99, 10);
+    
+//     // 4. Invalid Deletion (Negative index out of bounds)
+//     deleteElement(my_array, -1);
+
+//     return 0;
+// }
+
+
+
+
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    int arr[5] = {1,2,3,4,5};
-    int a=0 ;
 
-    for (int i =0 ; i<5 ; i++){
-        cout << arr[i];
-        cout<<"\n";
-        a=a+i ;
-        
-
-        
-
-
+void printArray(const vector<int>& arr) {
+    for (int i = 0; i < arr.size(); i++) {
+        cout << arr[i] << " ";
     }
-    cout<<"sum of all elements is "<<a<<endl;
-    a=a/5;
-    cout<<"average of the array is"<<a;
+    cout << endl;
+}
+void insertElement(vector<int>& arr, int element, int position) {
+    
+    if (position >= 0 && position <= arr.size()) {
+       
+        arr.insert(arr.begin() + position, element);
+        printArray(arr);
+    } else {
+        cout << "Invalid position!" << endl;
+    }
+}
+
+int main() {
+    vector<int> my_array = {1, 2, 3, 4, 5};
+
+    cout << "Original array: ";
+    printArray(my_array);
+
+    cout << "Inserting 1111 at position 2 (index 2): ";
+    insertElement(my_array, 1111, 2);
 
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
