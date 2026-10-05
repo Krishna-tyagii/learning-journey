@@ -600,38 +600,105 @@
 //     return 0;
 // }
 
+//Vecotors used
 
 
+// #include <bits/stdc++.h>
+// using namespace std;
 
-#include <bits/stdc++.h>
-using namespace std;
 
-
-void printArray(const vector<int>& arr) {
-    for (int i = 0; i < arr.size(); i++) {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-}
-void insertElement(vector<int>& arr, int element, int position) {
+// void printArray(const vector<int>& arr) {
+//     for (int i = 0; i < arr.size(); i++) {
+//         cout << arr[i] << " ";
+//     }
+//     cout << endl;
+// }
+// void insertElement(vector<int>& arr, int element, int position) {
     
-    if (position >= 0 && position <= arr.size()) {
+//     if (position >= 0 && position <= arr.size()) {
        
-        arr.insert(arr.begin() + position, element);
-        printArray(arr);
-    } else {
-        cout << "Invalid position!" << endl;
-    }
-}
+//         arr.insert(arr.begin() + position, element);
+//         printArray(arr);
+//     } else {
+//         cout << "Invalid position!" << endl;
+//     }
+// }
 
-int main() {
-    vector<int> my_array = {1, 2, 3, 4, 5};
+// int main() {
+//     vector<int> my_array = {1, 2, 3, 4, 5};
 
-    cout << "Original array: ";
-    printArray(my_array);
+//     cout << "Original array: ";
+//     printArray(my_array);
 
-    cout << "Inserting 1111 at position 2 (index 2): ";
-    insertElement(my_array, 1111, 2);
+//     cout << "Inserting 1111 at position 2 (index 2): ";
+//     insertElement(my_array, 1111, 2);
 
-    return 0;
-}
+//     return 0;
+// }
+
+
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int pos=2;
+//     int n =5;
+//     int item =23;
+//     int arr[6]={1,2,3,4,5};
+//     for (int i = n ; i>= pos; i--){
+//         arr[i]=arr[i-1];
+//     }
+//     arr[pos-1]=item;
+//     for (int i=0 ; i<= n;i++){
+//         cout<<arr[i]<<endl;
+//     }
+
+
+//     return 0;
+// }
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int pos=2;
+//     int n =5;
+//     int item =23;
+//     int arr[6]={1,2,3,4,5};
+//     for (int i = n ; i>= pos; i--){
+//         arr[i]=arr[i-1];
+//     }
+//     arr[pos-1]=item;
+//     for (int i=0 ; i<= n;i++){
+//         cout<<arr[i]<<endl;
+//     }
+
+
+//     return 0;
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int factori(int n) {
+//     if (n == 0) {
+//         return 1;
+//     }
+//     else {
+//         return n * factori(n - 1);
+//     }
+// }
+
+// int main() {
+//     cout << factori(5);
+
+//     return 0;
+// }
+
+
+
+
+
+
+
