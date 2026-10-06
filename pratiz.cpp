@@ -751,37 +751,37 @@
 
 //Tower of Hanoi
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-void solveHanoi(int n, char from_rod, char to_rod, char aux_rod) {
-    // BASE CASE: If there are no disks left to move, stop.
-    if (n == 0) {
-        return; 
-    }
+// void solveHanoi(int n, char from_rod, char to_rod, char aux_rod) {
+//     // BASE CASE: If there are no disks left to move, stop.
+//     if (n == 0) {
+//         return; 
+//     }
 
-    // STEP 1: Move the top n-1 disks off the largest disk and onto the auxiliary rod.
-    // Notice that 'aux_rod' and 'to_rod' swap places in this call.
-    solveHanoi(n - 1, from_rod, aux_rod, to_rod);
+//     // STEP 1: Move the top n-1 disks off the largest disk and onto the auxiliary rod.
+//     // Notice that 'aux_rod' and 'to_rod' swap places in this call.
+//     solveHanoi(n - 1, from_rod, aux_rod, to_rod);
 
     
-    cout << "Move disk " << n << " from " << from_rod << " to " << to_rod << endl;
+//     cout << "Move disk " << n << " from " << from_rod << " to " << to_rod << endl;
 
-    // STEP 3: Move the n-1 disks from the auxiliary rod to the target rod.
-    // Notice that 'from_rod' and 'aux_rod' swap places here.
-    solveHanoi(n - 1, aux_rod, to_rod, from_rod);
-}
+//     // STEP 3: Move the n-1 disks from the auxiliary rod to the target rod.
+//     // Notice that 'from_rod' and 'aux_rod' swap places here.
+//     solveHanoi(n - 1, aux_rod, to_rod, from_rod);
+// }
 
 
-int main() {
-    int total_disks = 3;
-    cout << "Steps to solve for " << total_disks << " disks:\n";
+// int main() {
+//     int total_disks = 3;
+//     cout << "Steps to solve for " << total_disks << " disks:\n";
     
-    // Start with disks on 'A', target is 'C', using 'B' as the spare.
-    solveHanoi(total_disks, 'A', 'C', 'B');
+//     // Start with disks on 'A', target is 'C', using 'B' as the spare.
+//     solveHanoi(total_disks, 'A', 'C', 'B');
     
-    return 0;
-}
+//     return 0;
+// }
 
 
 
