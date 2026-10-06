@@ -8,9 +8,6 @@
 // //     // cout << s[len-1];
 // //     cout<<s;
 
-
-
-
 // //     return 0;
 // // }
 
@@ -24,19 +21,13 @@
 // //     return 0;
 // // }
 
-
-
 // #include<bits/stdc++.h>
 // using namespace std;
 // int main(){
 //     for (int i =10 ; i>=1;i=i-1){
-//          cout<<"meow"<<endl;
-
-
+        //cout<<"meow"<<endl;
 //     }
    
-
-
 //     return 0;
 // }
 
@@ -48,14 +39,8 @@
 //     int a=20 ;
 //     cout<<a<<endl;
    
-
-
-
 //     return 0;
 // }
-
-
-
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -67,10 +52,6 @@
 
 //     return 0;
 // }
-
-
-
-
 
 
 // #include <bits/stdc++.h>
@@ -129,9 +110,6 @@
 // }
 
 
-
-
-
 // #include <bits/stdc++.h>
 // using namespace std;
 
@@ -150,9 +128,6 @@
 
 //     return 0;
 // }
-
-
-
 
 
 // #include <bits/stdc++.h>
@@ -401,8 +376,6 @@
 
 //     return 0;
 // }
-
-
 
 
 
@@ -696,8 +669,118 @@
 //     return 0;
 // }
 
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int fibonacci(int n)
+// {
+//     if(n == 0)
+//         return 0;
+
+//     if(n == 1)
+//         return 1;
+
+//     return fibonacci(n-1) + fibonacci(n-2);
+// }
+
+// int main()
+// {
+//     cout << fibonacci(5);
+
+//     return 0;
+// }
 
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main (){
+//     int arr[5] ={1,2,3,4,5};
+//     for (int i=0 ; i<=5;i++){
+//         if(arr[i]==4 ) {
+//         cout<<"no.found at" <<i<<endl ;
+//     }
+//         else{
+//             cout<<"nothing here"<<endl;
+//         }
+//     }
+
+
+
+//     return 0;
+// }
+
+
+
+//Binary Search
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+//     int arr[] = {5, 12, 23, 34, 45, 56, 67, 78};
+//     int n = 8;
+//     int key = 56;
+
+//     int low = 0;
+//     int high = n - 1;
+
+//     while (low <= high) {
+//         int mid = (low + high) / 2;
+
+//         cout << "Low = " << low
+//              << ", Mid = " << mid
+//              << ", High = " << high
+//              << ", arr[mid] = " << arr[mid] << endl;
+
+//         if (arr[mid] == key) {
+//             cout << "\nElement found at index " << mid;
+//             return 0;
+//         }
+//         else if (key > arr[mid]) {
+//             low = mid + 1;
+//         }
+//         else {
+//             high = mid - 1;
+//         }
+//     }
+
+//     cout << "\nElement not found";
+//     return 0;
+// }
+
+//Tower of Hanoi
+
+#include <iostream>
+using namespace std;
+
+void solveHanoi(int n, char from_rod, char to_rod, char aux_rod) {
+    // BASE CASE: If there are no disks left to move, stop.
+    if (n == 0) {
+        return; 
+    }
+
+    // STEP 1: Move the top n-1 disks off the largest disk and onto the auxiliary rod.
+    // Notice that 'aux_rod' and 'to_rod' swap places in this call.
+    solveHanoi(n - 1, from_rod, aux_rod, to_rod);
+
+    // STEP 2: The largest disk is now free. Move it to the target rod.
+    cout << "Move disk " << n << " from " << from_rod << " to " << to_rod << endl;
+
+    // STEP 3: Move the n-1 disks from the auxiliary rod to the target rod.
+    // Notice that 'from_rod' and 'aux_rod' swap places here.
+    solveHanoi(n - 1, aux_rod, to_rod, from_rod);
+}
+
+int main() {
+    int total_disks = 3;
+    cout << "Steps to solve for " << total_disks << " disks:\n";
+    
+    // Start with disks on 'A', target is 'C', using 'B' as the spare.
+    solveHanoi(total_disks, 'A', 'C', 'B');
+    
+    return 0;
+}
 
 
 
