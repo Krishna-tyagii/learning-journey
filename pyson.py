@@ -44,7 +44,24 @@ import numpy as np
 
 # arr = np.array([1, 2, 3, 4, 5, 6]).reshape(2, 3)
 # print(arr)
-a=np.array([1,2,3,4])
-b=np.array([2,23,4,5])
-print(np.concatenate((a,b)))
+# a=np.array([1,2,3,4])
+# b=np.array([2,23,4,5])
+# # print(np.concatenate((a,b)))
+# # print(np.vstack((a,b)))
+# # print(np.split(a,2))
+# print(np.append(a,[1,2,3,4,5,6,6,7]))
+# Dice roll (10 throws)
 
+
+
+# print(np.random.randint(0, 100, (3, 3)))
+
+np.random.choice(['H', 'T'], size=5, p=[0.7, 0.3])
+
+# # Choice without repetition (like a lottery)
+# np.random.choice(np.arange(1, 50), 6, replace=False)
+
+# # Random array, then mean and std
+# x = np.random.normal(100, 15, 1000)
+# print(x.mean(), x.std())
+print(np.random.choice(['H', 'T'], size=5, p=[0.7, 0.3]))
