@@ -764,13 +764,14 @@ void solveHanoi(int n, char from_rod, char to_rod, char aux_rod) {
     // Notice that 'aux_rod' and 'to_rod' swap places in this call.
     solveHanoi(n - 1, from_rod, aux_rod, to_rod);
 
-    // STEP 2: The largest disk is now free. Move it to the target rod.
+    
     cout << "Move disk " << n << " from " << from_rod << " to " << to_rod << endl;
 
     // STEP 3: Move the n-1 disks from the auxiliary rod to the target rod.
     // Notice that 'from_rod' and 'aux_rod' swap places here.
     solveHanoi(n - 1, aux_rod, to_rod, from_rod);
 }
+
 
 int main() {
     int total_disks = 3;
