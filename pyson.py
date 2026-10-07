@@ -37,7 +37,7 @@
 # print(c)
 
 
-import numpy as np
+# import numpy as np
 # print(np.arange(1,10,1))
 # print(np.linspace(0,10,2))
 # print(np.eye(3))
@@ -56,7 +56,7 @@ import numpy as np
 
 # print(np.random.randint(0, 100, (3, 3)))
 
-np.random.choice(['H', 'T'], size=5, p=[0.7, 0.3])
+# np.random.choice(['H', 'T'], size=5, p=[0.7, 0.3])
 
 # # Choice without repetition (like a lottery)
 # np.random.choice(np.arange(1, 50), 6, replace=False)
@@ -64,4 +64,32 @@ np.random.choice(['H', 'T'], size=5, p=[0.7, 0.3])
 # # Random array, then mean and std
 # x = np.random.normal(100, 15, 1000)
 # print(x.mean(), x.std())
-print(np.random.choice(['H', 'T'], size=5, p=[0.7, 0.3]))
+# print(np.random.choice(['H', 'T'], size=5, p=[0.7, 0.3]))
+
+
+
+# import numpy as np
+# np.random.seed(41)
+# print(np.random.rand(3))
+# rng = np.random.default_rng(42)
+
+# print(rng.random(3))    
+
+# import scipy as sp
+# import numpy as np
+# dense = np.array([[1, 0, 0, 2], [0, 4, 1, 0], [0, 0, 5, 0]])
+# sparse = sp.sparse.lil_array(dense)
+# print(dense.max())
+
+# print(sparse.mean())
+
+import pandas as pd
+data = {
+    "Name": ["A", "B", "C", "D"],
+    "Age": [20, 21, None, 22],
+    "Marks": [85, 90, 88, None]
+}
+
+df = pd.DataFrame(data)
+print(df)
+
