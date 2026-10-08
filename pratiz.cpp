@@ -810,29 +810,171 @@
 // }
 
 
-#include<bits/stdc++.h>
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// struct Node {
+//         public:
+//         int data ;
+//         Node * next ;
+
+//         Node(int v){
+//                 data =v ;
+//                 next =nullptr;
+//         }
+
+// };
+// int main(){
+//         Node*head =nullptr
+// }
+
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// struct Node {
+// public:
+//     int data;
+//     Node* next;
+
+//     Node(int data1, Node* next1) {
+//         data = data1;
+//         next = next1;
+//     }
+// };
+
+// void print(Node* head) {
+//     while (head != nullptr) {
+//         cout << head->data << " ";
+//         head = head->next;
+//     }
+//     cout << "\n";
+// }
+
+// // Build a linked list from a vector, returns head
+// Node* buildList(vector<int>& arr) {
+//     Node* head = nullptr;
+//     Node* tail = nullptr;
+//     for (int val : arr) {
+//         Node* newNode = new Node(val, nullptr);
+//         if (head == nullptr) {
+//             head = newNode;
+//             tail = newNode;
+//         } else {
+//             tail->next = newNode;
+//             tail = newNode;
+//         }
+//     }
+//     return head;
+// }
+
+// Node* removeHead(Node* head) {
+//     if (head == nullptr) {
+//         return head;
+//     }
+//     Node* temp = head;
+//     head = head->next;
+//     delete temp;
+//     return head;
+// }
+
+// int main() {
+//     vector<int> arr = {1, 2, 3, 4, 5};
+
+//     Node* head = buildList(arr);
+//     cout << "Original list: ";
+//     print(head);
+
+//     head = removeHead(head);
+//     cout << "After removing head: ";
+//     print(head);
+
+//     return 0;
+// }
+
+
+
+// BUBBLE SORT
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main(){
+//         int arr [] ={4,3,677,865,23456};
+//         int n = sizeof(arr)/sizeof(arr[0]);
+
+//         for (int i=0 ; i<n-1 ; i++){
+
+//                 for (int j =0 ; j<n-1-i; j++){
+
+//                         if (arr[j]==arr[j+1]){
+
+//                                 int temp =arr[j];
+//                                 arr[j]=arr[j+1];
+//                                 arr[j+1]=temp;
+
+//                         }
+//                 }
+//         }
+//         for (int i =0 ; i<n ;i++){
+//                 cout<<arr[i]<<" ";
+//         }
+//         return 0;
+// }
+
+
+
+
+//SECLECTON SORT
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// void selectionsort(int arr[],int n){
+
+//         for (int i=0 ; i<n-1 ;i++){
+//                 int minindx =i;
+//                 for(int j=i+1 ;j<n-1 ;j++){
+//                         if (arr[j]<arr[minindx]){
+//                                 minindx=j;
+//                         }
+//                 }
+//                 swap(arr[i],arr[minindx]);
+//         }
+// }
+
+// int main(){
+//         int arr[]={112332,121,23,131313};
+//         int n = sizeof(arr)/sizeof(arr[0]);
+
+//         selectionsort(arr,n);
+
+//         for(int i=0 ;i<n;i++){
+//                 cout<<arr[i]<<" ";
+//         }
+
+
+//         return 0;
+// }
+#include <iostream>
+#include <vector>
 using namespace std;
 
-struct Node {
-        public:
-        int data ;
-        Node * next ;
-
-
-        public:
-        Node(int data1 ,Node*next1){
-                data=data1;
-                next=next1;
+void insertionSort(vector<int>& arr) {
+    for (int i = 1; i < arr.size(); i++) {
+        int key = arr[i];
+        int j = i - 1;
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j--;
         }
-};
+        arr[j + 1] = key;
+    }
+}
 
-int main(){
-        vector <int> arr = {1,2,3,4,5};
-        Node*y = new Node (arr[0],nullptr);
-        cout<<y;
-
-
-
-
-        return 0;
+int main() {
+    vector<int> arr = {5, 2, 4, 1};
+    insertionSort(arr);
+    for (int x : arr) {
+        cout << x << " ";}
 }
